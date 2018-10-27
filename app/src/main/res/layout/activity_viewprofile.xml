@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".viewprofile">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="160dp"
+        android:layout_height="151dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        app:srcCompat="@drawable/b" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="127dp"
+        android:layout_height="38dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="85dp"
+        android:layout_marginTop="210dp"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="135dp"
+        tools:layout_editor_absoluteY="131dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="85dp" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="126dp"
+        android:layout_height="36dp"
+
+        android:layout_alignStart="@+id/textView8"
+
+        android:layout_below="@+id/textView23"
+        android:text="TextView"
+        android:layout_alignLeft="@+id/textView8" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="127dp"
+        android:layout_height="36dp"
+
+        android:layout_alignStart="@+id/textView8"
+        android:layout_below="@+id/textView8"
+        android:text="TextView"
+        android:layout_alignLeft="@+id/textView8" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="126dp"
+        android:layout_height="39dp"
+
+        android:layout_alignStart="@+id/textView8"
+        android:layout_below="@+id/textView12"
+        android:text="TextView"
+        android:layout_alignLeft="@+id/textView8" />
+        " />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="126dp"
+        android:layout_height="35dp"
+
+        android:layout_alignStart="@+id/textView8"
+        android:layout_below="@+id/textView15"
+        android:text="TextView"
+        android:layout_alignLeft="@+id/textView8" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="127dp"
+        android:layout_height="40dp"
+
+        android:layout_alignStart="@+id/textView8"
+        android:layout_below="@+id/textView11"
+        android:text="TextView"
+        android:layout_alignLeft="@+id/textView8" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="127dp"
+        android:layout_height="38dp"
+
+        android:layout_alignStart="@+id/textView8"
+        android:layout_below="@+id/textView13"
+        android:text="TextView"
+        android:layout_alignLeft="@+id/textView8" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="33dp"
+        android:gravity="center"
+        android:onClick="editprofile"
+        android:text="Edit"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="72dp"
+        android:layout_height="33dp"
+
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/textView8"
+        android:layout_marginStart="51dp"
+        android:text="Name: "
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="51dp" />
+
+    <TextView
+        android:id="@+id/textView38"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+
+        android:gravity="center"
+
+        android:text="Profile"
+
+        />
+
+    <Button
+        android:id="@+id/button17"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentBottom="true"
+
+        android:layout_alignParentStart="true"
+        android:onClick="signoutfunc"
+        android:text="SignOut"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="72dp"
+        android:layout_height="34dp"
+
+        android:layout_alignStart="@+id/textView24"
+        android:layout_below="@+id/textView8"
+        android:text="Email"
+        android:layout_alignLeft="@+id/textView24" />
+
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="72dp"
+        android:layout_height="35dp"
+
+        android:layout_alignStart="@+id/textView24"
+        android:layout_below="@+id/textView12"
+        android:text="Phone"
+        android:layout_alignLeft="@+id/textView24" />
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="71dp"
+        android:layout_height="37dp"
+
+        android:layout_alignStart="@+id/textView24"
+        android:layout_below="@+id/textView30"
+        android:text="Gender"
+        android:layout_alignLeft="@+id/textView24" />
+
+    <TextView
+        android:id="@+id/textView32"
+        android:layout_width="71dp"
+        android:layout_height="37dp"
+
+        android:layout_alignStart="@+id/textView24"
+        android:layout_alignTop="@+id/textView11"
+        android:text="Age"
+        android:layout_alignLeft="@+id/textView24" />
+
+    <TextView
+        android:id="@+id/textView34"
+        android:layout_width="72dp"
+        android:layout_height="34dp"
+
+        android:layout_alignStart="@+id/textView24"
+        android:layout_below="@+id/textView11"
+        android:text="City"
+        android:layout_alignLeft="@+id/textView24" />
+
+    <TextView
+        android:id="@+id/textView36"
+        android:layout_width="72dp"
+        android:layout_height="31dp"
+
+        android:layout_alignStart="@+id/textView24"
+        android:layout_alignTop="@+id/textView14"
+        android:text="Country"
+        android:layout_alignLeft="@+id/textView24" />
+</RelativeLayout>

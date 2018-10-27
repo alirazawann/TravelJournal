@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".videowishlist">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view417"
+        android:layout_width="match_parent"
+        android:layout_height="426dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView4317"
+        android:layout_alignParentLeft="true"></android.support.v7.widget.RecyclerView>
+
+    <Button
+        android:id="@+id/button3317"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button3417"
+        android:layout_alignParentStart="true"
+        android:onClick="wishlistimgfunc"
+        android:text="Images"
+        android:layout_alignParentLeft="true" />
+
+    <Button
+        android:id="@+id/button3417"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="homefunc"
+        android:text="Button" />
+
+    <Button
+        android:id="@+id/button3517"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button3417"
+        android:layout_alignParentEnd="true"
+        android:text="Videos"
+        android:layout_alignParentRight="true" />
+
+    <Button
+        android:id="@+id/button3617"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="addfunc"
+        android:text="+" />
+
+    <Button
+        android:id="@+id/button3717"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@+id/button3817"
+        android:onClick="galleryfunc"
+        android:text="Button"
+        android:layout_toLeftOf="@+id/button3817" />
+
+    <Button
+        android:id="@+id/button3817"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="gotoprofile"
+        android:text="Button"
+        android:layout_alignParentRight="true" />
+
+    <TextView
+        android:id="@+id/textView4317"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:text="Wishlist Videos"
+        android:layout_alignParentLeft="true" />
+
+    <Button
+        android:id="@+id/button47"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@+id/button3717"
+        android:onClick="wishlistfunc"
+        android:text="Button"
+        android:layout_toLeftOf="@+id/button3717" />
+
+
+</RelativeLayout>

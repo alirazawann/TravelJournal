@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".uploadimages">
+
+    <Button
+        android:id="@+id/button11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView39"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-109dp"
+        android:text="Choose image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="237dp" />
+
+
+    <RadioGroup
+        android:id="@+id/rGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView39"
+        android:layout_centerHorizontal="true"
+        android:text="Collection">
+
+        <RadioButton
+            android:id="@+id/inCity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:onClick="checkbutton"
+            android:text="Within city trips" />
+
+        <RadioButton
+            android:id="@+id/outcity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="checkbutton"
+            android:text="Out of city trips" />
+
+        <RadioButton
+            android:id="@+id/outstate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="checkbutton"
+            android:text="Out of state trips" />
+        <RadioButton
+            android:id="@+id/wishlist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="checkbutton"
+            android:text="Wishlist" />
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/editText12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="228dp"
+        android:ems="10"
+        android:hint="Enter Name"
+        android:inputType="textPersonName" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="178dp"
+        android:layout_height="171dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="42dp" />
+
+    <Button
+        android:id="@+id/button12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Upload" />
+
+    <TextView
+        android:id="@+id/textView39"
+        android:layout_width="90dp"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="109dp"
+        android:layout_marginEnd="20dp"
+        android:text="TextView"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp" />
+
+    <TextView
+        android:id="@+id/textView40"
+        android:layout_width="76dp"
+        android:layout_height="57dp"
+        android:layout_alignTop="@+id/rGroup"
+        android:layout_toStartOf="@+id/imageView"
+        android:gravity="center"
+        android:text="Diary"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:layout_toLeftOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="108dp"
+        android:layout_height="45dp"
+        android:layout_alignBottom="@+id/button11"
+        android:layout_alignStart="@+id/textView39"
+        android:layout_marginStart="-16dp"
+        android:text="Upload Video"
+        android:layout_alignLeft="@+id/textView39"
+        android:layout_marginLeft="-16dp"
+        android:onClick="funcuploadingvideo"/>
+</RelativeLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".facebookdata">
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="Facebook data"
+        android:layout_alignParentLeft="true"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="106dp"
+        android:layout_height="35dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="90dp"
+        android:text="Name"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="227dp"
+        android:layout_height="35dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/textView17"
+        android:layout_marginStart="128dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="128dp" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="106dp"
+        android:layout_height="41dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="143dp"
+        android:text="Email"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="227dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/textView18"
+        android:layout_marginTop="142dp"
+        android:layout_alignLeft="@+id/textView18" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="108dp"
+        android:layout_height="38dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="200dp"
+        android:text="ID"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="229dp"
+        android:layout_height="33dp"
+        android:layout_alignStart="@+id/textView18"
+        android:layout_alignTop="@+id/textView21"
+        android:layout_alignLeft="@+id/textView18" />
+</RelativeLayout>

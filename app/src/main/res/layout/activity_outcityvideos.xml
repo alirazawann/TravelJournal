@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".outcityvideos">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view41"
+        android:layout_width="match_parent"
+        android:layout_height="382dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"></android.support.v7.widget.RecyclerView>
+
+    <Button
+        android:id="@+id/button301"
+        android:layout_width="135dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/recycler_view41"
+
+        android:layout_alignParentStart="true"
+        android:onClick="icfunc"
+        android:text="In City"
+        android:layout_alignParentLeft="true" />
+
+    <Button
+        android:id="@+id/button311"
+        android:layout_width="135dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/recycler_view41"
+        android:layout_centerHorizontal="true"
+        android:onClick="ocfunc"
+        android:text="OutCity" />
+
+    <Button
+        android:id="@+id/button321"
+        android:layout_width="135dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/recycler_view41"
+        android:layout_alignParentEnd="true"
+        android:onClick="osfunc"
+        android:text="Foreign"
+        android:layout_alignParentRight="true" />
+
+    <Button
+        android:id="@+id/button331"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/recycler_view41"
+        android:onClick="ifunc"
+        android:text="Images"
+        android:layout_alignParentLeft="true" />
+
+    <Button
+        android:id="@+id/button341"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="homefunc"
+        android:text="Button" />
+
+    <Button
+        android:id="@+id/button351"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/button331"
+        android:text="Videos"
+        android:layout_alignParentRight="true" />
+
+    <Button
+        android:id="@+id/button361"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="addfunc"
+        android:text="+" />
+
+    <Button
+        android:id="@+id/button371"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@+id/button381"
+        android:onClick="galleryfunc"
+        android:text="Button"
+        android:layout_toLeftOf="@+id/button381" />
+
+    <Button
+        android:id="@+id/button381"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="gotoprofile"
+        android:text="Button"
+        android:layout_alignParentRight="true" />
+
+    <TextView
+        android:id="@+id/textView431"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:text="Out City"
+        android:layout_alignParentLeft="true" />
+
+    <Button
+        android:id="@+id/button47"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@+id/button371"
+        android:onClick="wishlistfunc"
+        android:text="Button"
+        android:layout_toLeftOf="@+id/button371" />
+
+
+</RelativeLayout>

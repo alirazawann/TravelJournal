@@ -5,12 +5,17 @@ import com.google.firebase.database.Exclude;
 public class Upload {
     private String mName;
     private String mImageUrl;
+    private String lati;
+    private String alti;
     private String mKey;
     public Upload()
     {
-        //empty constructor needed
+        mName="";
+        mImageUrl="";
+        lati="";
+        alti="";
     }
-    public Upload(String name,String imageUrl)
+    public Upload(String name,String imageUrl,String l,String a)
     {
         if(name.trim().equals(""))
         {
@@ -19,6 +24,8 @@ public class Upload {
         mName=name;
         mImageUrl=imageUrl;
 
+        lati=l;
+        alti=a;
     }
 
     public String getName() {
@@ -37,7 +44,21 @@ public class Upload {
         this.mImageUrl = mImageUrl;
     }
 
+    public String getLati() {
+        return lati;
+    }
 
+    public String getAlti() {
+        return alti;
+    }
+
+    public void setLati(String lati) {
+        this.lati = lati;
+    }
+
+    public void setAlti(String alti) {
+        this.alti = alti;
+    }
 
     @Exclude
     public String getKey() {

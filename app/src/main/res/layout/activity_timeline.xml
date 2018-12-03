@@ -135,4 +135,17 @@
         android:text="Button"
         android:layout_toLeftOf="@+id/button14" />
 
+    <Button
+        android:id="@+id/button49"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="-156dp"
+        android:layout_toStartOf="@+id/progress_circle"
+        android:text="Button"
+        android:layout_marginRight="-156dp"
+        android:layout_toLeftOf="@+id/progress_circle"
+        android:onClick="map"
+        />
+
 </RelativeLayout>

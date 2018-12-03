@@ -4,6 +4,9 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -57,7 +60,10 @@
         <activity android:name=".outstatevideos" />
         <activity android:name=".homevideo" />
         <activity android:name=".wishlist" />
-        <activity android:name=".videowishlist"></activity>
+        <activity android:name=".videowishlist" />
+        <activity
+            android:name=".map"
+            android:label="@string/title_activity_map"></activity>
     </application>
 
 </manifest>

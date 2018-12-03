@@ -3,6 +3,8 @@ package com.example.aliia.traveljournal;
 import android.app.ProgressDialog;
 import android.content.ContentResolver;
 import android.content.Intent;
+import android.location.Address;
+import android.location.Geocoder;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Handler;
@@ -11,6 +13,7 @@ import android.support.annotation.Nullable;
 import android.support.annotation.RequiresApi;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.webkit.MimeTypeMap;
 import android.widget.Button;
@@ -35,8 +38,11 @@ import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.OnProgressListener;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
+import com.mapbox.mapboxsdk.geometry.LatLng;
 import com.squareup.picasso.Picasso;
 
+import java.io.IOException;
+import java.util.List;
 import java.util.Objects;
 
 public class uploadimages extends AppCompatActivity {
@@ -52,6 +58,7 @@ public class uploadimages extends AppCompatActivity {
     private Button mButtonUpload;
     private TextView mTextViewShowUploads;
     private EditText mEditTextFileName;
+    private EditText location;
     private ImageView mImageView;
     private VideoView mVideoView;
     private ProgressBar mProgressBar;
@@ -74,6 +81,7 @@ public class uploadimages extends AppCompatActivity {
         mButtonUpload=findViewById(R.id.button12);
         mTextViewShowUploads=findViewById(R.id.textView39);
         mEditTextFileName=findViewById(R.id.editText12);
+        location=findViewById(R.id.editText14);
         mImageView=findViewById(R.id.imageView);
         mProgressBar=findViewById(R.id.progress_bar);
 
@@ -165,10 +173,56 @@ public class uploadimages extends AppCompatActivity {
                 public void onComplete(@NonNull Task<Uri> task) {
                     if (task.isSuccessful())
                     {
-
                         Uri downloadUri=task.getResult();
                         String miUrlOk=downloadUri.toString();
-                        Upload upload=new Upload(mEditTextFileName.getText().toString().trim(),miUrlOk);
+                        Upload upload=new Upload(mEditTextFileName.getText().toString().trim(),miUrlOk,"","");
+
+                        if(location.getText().length()>0)
+                        {
+                            Geocoder geocoder=new Geocoder(uploadimages.this);
+                            try
+                            {
+                                Log.d("in first try","lora mera");
+                                List<Address> addressList=geocoder.getFromLocationName(location.getText().toString(),1);
+                                while (addressList.size()==0) {
+                                    addressList = geocoder.getFromLocationName(location.getText().toString(), 1);
+
+                                    Log.d("loop","i");
+                                }
+                                Log.d("in middle try","lora mera");
+                                if(addressList.size()>0)
+                                {
+                                    Log.d("in if try","lora mera");
+
+                                    Address address=addressList.get(0);
+                                    LatLng latLng=new LatLng(address.getLatitude(),address.getLongitude());
+
+                                    Double l1=latLng.getLatitude();
+                                    Double l2=latLng.getLongitude();
+                                    Log.d("address",address.toString());
+
+                                    Log.d("LATLNG",l1.toString());
+
+                                    Log.d("LATLNG",l2.toString());
+                                     upload=new Upload(mEditTextFileName.getText().toString().trim(),miUrlOk,l1.toString(),l2.toString());
+
+
+                                }
+                                else
+                                {
+                                    Log.d("Not Found","lora mera");
+                                }
+                            }
+                            catch(IOException e)
+                            {
+                                e.printStackTrace();
+                            }
+                        }
+                        else
+                        {
+                            Toast.makeText(uploadimages.this,"Enter Location",Toast.LENGTH_SHORT).show();
+                        }
+
 
 
 

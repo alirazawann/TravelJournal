@@ -158,7 +158,7 @@ public class uploadvideos extends AppCompatActivity {
 
                         Uri downloadUri=task.getResult();
                         String miUrlOk=downloadUri.toString();
-                        Upload upload=new Upload(mEditTextFileName.getText().toString().trim(),miUrlOk);
+                        Upload upload=new Upload(mEditTextFileName.getText().toString().trim(),miUrlOk,"","");
 
 
 
